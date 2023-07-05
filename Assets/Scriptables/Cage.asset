@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c7f281fb77343419a2fd4bc3e66dab, type: 3}
   m_Name: Cage
   m_EditorClassIdentifier: 
-  hurdleName: Cage
-  hurdlePrefab: {fileID: 0}
-  hurdleCount: 0
+  hurdlePrefab: {fileID: 8674099323970001516, guid: 2208f4212e9b6624daa506c8a8c8abf7, type: 3}
