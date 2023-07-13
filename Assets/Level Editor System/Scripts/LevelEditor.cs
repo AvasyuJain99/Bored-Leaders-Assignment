@@ -7,20 +7,19 @@ public class LevelEditor : MonoBehaviour
     public HurdleData captureCageData;
     public HurdleData mineData;
 
-    private Camera mainCamera;
     private Tile selectedTile;
     private HurdleData currentHurdleData;
 
     private void Awake()
     {
-        mainCamera = Camera.main;
+       
     }
     
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 Tile tile = hit.collider.GetComponent<Tile>();
